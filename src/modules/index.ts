@@ -10,6 +10,6 @@ export const getIndex = async () => {
     r.data
   })
   .catch((e) => {
-    apiError.set(e)
+    apiError.set(`cannot contact fullnode, error message: ${e}`)
   });
 }
